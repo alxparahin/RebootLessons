@@ -1,20 +1,29 @@
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
 
-    @org.junit.jupiter.api.BeforeEach
+    private Main main;
+
+    @BeforeEach
     void setUp() {
-        System.out.println("Test started");
+        main = new Main();
+        System.out.println("Before test");
     }
 
-    @org.junit.jupiter.api.AfterEach
+    @AfterEach
     void tearDown() {
-        System.out.println("Test finished");
+        main = null;
+        System.out.println("After test");
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void main() {
-        Main.main(new String[]{"asd","ewq"});
-        assertEquals(1,1);
+        Main.main(new String[]{"asd1","arg2"});
+        assertEquals(1, main.sP());
+        System.out.println(main+" "+main.sP());
     }
 }
