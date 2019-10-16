@@ -1,7 +1,7 @@
 public class Main {
 
     int sP(){
-        System.out.println("sP:1");
+        System.out.println("sP:1 for Lesson5");
         return 1;
     }
 
