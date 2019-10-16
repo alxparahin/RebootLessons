@@ -22,8 +22,8 @@ class MainTest {
 
     @Test
     void main() {
-        Main.main(new String[]{"asd1","arg2"});
+        //Main.main(new String[]{"asd1","arg2"});
         assertEquals(1, main.sP());
-        System.out.println(main+" "+main.sP());
+        //System.out.println(main+" "+main.sP());
     }
 }
