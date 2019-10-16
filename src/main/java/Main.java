@@ -1,6 +1,7 @@
 public class Main {
 
     int sP(){
+        System.out.println("sP:1");
         return 1;
     }
 
